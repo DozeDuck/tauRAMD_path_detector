@@ -132,7 +132,7 @@ class tauRAMD_PATH():
                         self.Atomtype_per_atom.append("l")
                     #print(line)
     def ligand_finder(self,ligandName):
-        number_of_atoms_in_ligand = int(self.residue_name.count("MOL")/len(self.time))
+        number_of_atoms_in_ligand = int(self.residue_name.count(ligandName)/len(self.time))
         self.target_ligands.clear()
         c = 0
         for i in range(0, len(self.atomic_index)):
